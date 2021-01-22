@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Razvii_pt14</string>
+    <string name="country_name_text">Country name: %1$s</string>
+    <string name="country_area_text">Country area: %1$s km2</string>
+    <string name="country_population_text">"Country population: %1$s people"</string>
+    <string name="country_population_density_text">"Country population density: %1$d person p/km2"</string>
 </resources>

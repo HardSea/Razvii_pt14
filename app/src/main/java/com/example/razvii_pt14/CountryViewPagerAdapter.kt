@@ -4,13 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class CountryViewPagerAdapter(activity: AppCompatActivity): FragmentStateAdapter(activity) {
+class CountryViewPagerAdapter(activity: AppCompatActivity, private val countryList: ArrayList<Country>) : FragmentStateAdapter(activity) {
+
     override fun getItemCount(): Int {
-        return 3
+        return countryList.size
     }
 
     override fun createFragment(position: Int): Fragment {
-        return CountryFragment.newInstance(position)
+        return CountryFragment.newInstance(countryList[position])
     }
 
 }
